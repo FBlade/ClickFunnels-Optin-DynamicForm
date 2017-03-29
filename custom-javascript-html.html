@@ -2,9 +2,9 @@
 input[type=radio].css-checkbox {
     position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
 }
-input[type=radio] + label.css-label {
+label.css-label {
     padding-left: 10px;
-    height: 22px;
+    /*height: 22px;*/
     display:inline-block;
     line-height:20px;
     background-repeat:no-repeat;
@@ -17,12 +17,8 @@ input[type=radio] + label.css-label {
 }
 #ryanTable tr td,  #ryanTable2 tr td{padding:7px;
 }
-input[type=radio].css-checkbox:checked + label.css-label {
-    /*background-position: 0 -18px;*/
-}
-label.css-label {
-/*    background-image:url(https://i.imgsafe.org/4909a42a8f.png);*/
-}
+
+
 .frmCenter{
     text-align:center;
 }
@@ -41,8 +37,8 @@ label.css-label {
 
 @keyframes click-wave {
   0% {
-    height: 40px;
-    width: 40px;
+    height: 20px;
+    width: 20px;
     opacity: 0.35;
     position: relative;
   }
@@ -62,12 +58,12 @@ label.css-label {
   -o-appearance: none;
   appearance: none;
   position: relative;
-  top: 13.33333px;
+  /*top: 13.33333px;*/
   right: 0;
   bottom: 0;
   left: 0;
-  height: 40px;
-  width: 40px;
+  height: 20px;
+  width: 20px;
   transition: all 0.15s ease-out 0s;
   /*background: #cbd1d8;*/
   background: rgba(255, 255, 255, 0.3);
@@ -87,30 +83,34 @@ label.css-label {
   border: #FFF 0px solid;
 }
 .option-input:checked {
-  background: #40e0d0;
+  background: #8e0606;
   border: #FFF 0px solid;
 }
 .option-input:checked::before {
-  height: 40px;
-  width: 40px;
+  height: 20px;
+  width: 20px;
   position: absolute;
   content: '✔';
   display: inline-block;
-  font-size: 26.66667px;
+  font-size: 15px;
   text-align: center;
-  line-height: 40px;
+  line-height: 21px;
   border: #FFF 0px solid;
 }
 .option-input:checked::after {
   -webkit-animation: click-wave 0.65s;
   -moz-animation: click-wave 0.65s;
   animation: click-wave 0.65s;
-  background: #40e0d0;
+  background: rgba(142, 6, 6, 0.50);
   content: '';
   display: block;
   position: relative;
   z-index: 100;
   border: #FFF 0px solid;
+  height: 20px;
+  width: 20px;
+  line-height: 21px;
+  font-size: 15px;
 }
 .option-input.radio {
   border-radius: 50%;
@@ -145,28 +145,28 @@ label.css-label {
                         <td>
                             <input type="radio" name="radiog_page1" id="radio1" data-value="EMPREENDEDOR"
                             data-formid="7883af58f29de5bc3f047060fe03691b" class="option-input radio" />
-                            <label for="radio1" class="css-label radGroup1">Eu sou Empreendedor</label>
                         </td>
+                        <td><label for="radio1" class="css-label radGroup1">Eu sou Empreendedor</label></td>
                     </tr><tr>
                         <td>
                             <input type="radio" name="radiog_page1" id="radio2" data-value="PROFISSIONAL LIBERAL"
                             data-formid="4e64f9c81cc5baf92e6d9e1760341ed1" class="option-input radio"  />
-                            <label for="radio2" class="css-label radGroup1">Eu sou Profissional Liberal</label>
                         </td>
+                        <td><label for="radio2" class="css-label radGroup1">Eu sou Profissional Liberal</label></td>
                     </tr>
                     <tr>
                         <td>
                             <input type="radio" name="radiog_page1" id="radio3" data-value="PROFISSIONAL"
                             data-formid="661c0106636e2af8637903935971e7d2" class="option-input radio" />
-                            <label for="radio3" class="css-label radGroup1">Eu sou Profissional - Trabalho numa Empresa</label>
                         </td>
+                        <td><label for="radio3" class="css-label radGroup1">Eu sou Profissional - Trabalho numa Empresa</label></td>
                     </tr>
                     <tr>
                         <td>
                             <input type="radio" name="radiog_page1" id="radio4" data-value="OUTRO"
                             data-formid="e92904b88ffdfaca6a1aa19826ee5ea8" class="option-input radio" />
-                            <label for="radio4" class="css-label radGroup1">Outro</label>
                         </td>
+                        <td><label for="radio4" class="css-label radGroup1">Outro</label></td>
                     </tr>
                 </table>
             </div>
