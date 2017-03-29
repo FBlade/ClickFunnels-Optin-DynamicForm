@@ -3,8 +3,8 @@ input[type=radio].css-checkbox {
     position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
 }
 input[type=radio] + label.css-label {
-    padding-left:31px;
-    height:18px;
+    padding-left: 10px;
+    height: 22px;
     display:inline-block;
     line-height:20px;
     background-repeat:no-repeat;
@@ -47,10 +47,10 @@ label.css-label {
     position: relative;
   }
   100% {
-    height: 200px;
-    width: 200px;
-    margin-left: -80px;
-    margin-top: -80px;
+    height: 100px;
+    width: 100px;
+    margin-left: -30px;
+    margin-top: -30px;
     opacity: 0;
   }
 }
@@ -71,7 +71,8 @@ label.css-label {
   transition: all 0.15s ease-out 0s;
   /*background: #cbd1d8;*/
   background: rgba(255, 255, 255, 0.3);
-  border: none;
+  border: #FFF 3px solid;
+  /*border: none;*/
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -82,11 +83,12 @@ label.css-label {
 }
 .option-input:hover {
   /*background: #9faab7;*/
-  background: rgba(255, 255, 255, 0.3);
-  border: #FFF 3px solid;
+  background: rgba(255, 255, 255, 0.6);
+  border: #FFF 0px solid;
 }
 .option-input:checked {
   background: #40e0d0;
+  border: #FFF 0px solid;
 }
 .option-input:checked::before {
   height: 40px;
@@ -97,6 +99,7 @@ label.css-label {
   font-size: 26.66667px;
   text-align: center;
   line-height: 40px;
+  border: #FFF 0px solid;
 }
 .option-input:checked::after {
   -webkit-animation: click-wave 0.65s;
@@ -107,6 +110,7 @@ label.css-label {
   display: block;
   position: relative;
   z-index: 100;
+  border: #FFF 0px solid;
 }
 .option-input.radio {
   border-radius: 50%;
@@ -200,43 +204,43 @@ label.css-label {
         <table  id="ryanTable2">
             <tr>
                 <td>
-                    <input type="radio" name="radiog_page3" id="radio2_1" data-value="Produtividade" class="css-checkbox" />
+                    <input type="radio" name="radiog_page3" id="radio2_1" data-value="Produtividade" class="option-input radio" />
                     <label for="radio2_1" class="css-label radGroup1">Produtividade. Falta de produtividade no que fazes...</label>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="radiog_page3" id="radio2_2" data-value="Financeiro" class="css-checkbox"  />
+                    <input type="radio" name="radiog_page3" id="radio2_2" data-value="Financeiro" class="option-input radio"  />
                     <label for="radio2_2" class="css-label radGroup1">Financeiro. Procuras liberdade financeira.</label>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="radiog_page3" id="radio2_3" data-value="Emprego ou Promoção" class="css-checkbox" />
+                    <input type="radio" name="radiog_page3" id="radio2_3" data-value="Emprego ou Promoção" class="option-input radio" />
                     <label for="radio2_3" class="css-label radGroup1">Emprego ou Promoção. Procuras um salto na tua carreira.</label>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="radiog_page3" id="radio2_4" data-value="Energia" class="css-checkbox" />
+                    <input type="radio" name="radiog_page3" id="radio2_4" data-value="Energia" class="option-input radio" />
                     <label for="radio2_4" class="css-label radGroup1">Energia. Falta de energia física.</label>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="radiog_page3" id="radio2_5" data-value="Networking" class="css-checkbox" />
+                    <input type="radio" name="radiog_page3" id="radio2_5" data-value="Networking" class="option-input radio" />
                     <label for="radio2_5" class="css-label radGroup1">Networking. Não estás a conseguir crescer os teus contactos.</label>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="radiog_page3" id="radio2_6" data-value="Motivação/ Disciplina" class="css-checkbox" />
+                    <input type="radio" name="radiog_page3" id="radio2_6" data-value="Motivação/ Disciplina" class="option-input radio" />
                     <label for="radio2_6" class="css-label radGroup1">Motivação/ Disciplina. Procrastinas permanentemente...</label>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="radio" name="radiog_page3" id="radio2_7" data-value="-1" class="css-checkbox" />
+                    <input type="radio" name="radiog_page3" id="radio2_7" data-value="-1" class="option-input radio" />
                     <label for="radio2_7" class="css-label radGroup1">Outro</label>
                 </td>
             </tr>
