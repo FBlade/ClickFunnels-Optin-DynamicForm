@@ -1,0 +1,343 @@
+<style>
+input[type=radio].css-checkbox {
+    position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+input[type=radio].css-checkbox + label.css-label {
+    padding-left:31px;
+    height:18px;
+    display:inline-block;
+    line-height:20px;
+    background-repeat:no-repeat;
+    color:#fff;
+    background-position: 0 0;
+    font-size:18px;
+    vertical-align:middle;
+    cursor:pointer;
+    font-weight: normal;
+}
+#ryanTable tr td,  #ryanTable2 tr td{padding:7px;
+}
+input[type=radio].css-checkbox:checked + label.css-label {
+    background-position: 0 -18px;
+}
+label.css-label {
+    background-image:url(https://i.imgsafe.org/4909a42a8f.png);
+}
+.frmCenter{
+    text-align:center;
+}
+#ryanTable, #ryanTable2{
+    text-align: left;
+}
+</style>
+<div class="frmCenter">
+    <form id="isFrm" accept-charset="UTF-8" class="infusion-form" method="POST" action="">
+        <input id="inf_form_xid" name="inf_form_xid" type="hidden" value="" />
+        <input name="inf_form_name" type="hidden" value="MCPTv2" />
+        <input name="infusionsoft_version" type="hidden" value="1.56.0.63" />
+        <input id="inf_custom_TipoLead" name="inf_custom_TipoLead" type="hidden" value="" />
+        <input id="inf_custom_TopQuestao" name="inf_custom_TopQuestao" type="hidden" value="" />
+        <input id="inf_custom_Affiliate" name="inf_custom_Affiliate" type="hidden" value="" />
+        <input id="inf_custom_ref" name="inf_custom_ref" type="hidden" value="" />
+        <input id="inf_custom_fld1" name="inf_custom_fld1" type="hidden" value="" />
+        <input id="inf_custom_fld2" name="inf_custom_fld2" type="hidden" value="" />
+        <!-- Passo 1 ============================================================================================ -->
+        <div id="optin-p1">
+            <div id ="radioBlock" style="padding:6px;border-width:3px; border-style: solid; border-color: rgba(255, 255, 255, 0.92)">
+                <h4 style="color: #fff">Quero conhecer-te com o objectivo de proporcionar a melhor experiência neste Workshop. Diz-me quem és:</h4>
+                <table  id="ryanTable">
+                    <tr>
+                        <td>
+                            <input type="radio" name="radiog_page1" id="radio1" data-value="EMPREENDEDOR" data-formid="7883af58f29de5bc3f047060fe03691b" class="css-checkbox" />
+                            <label for="radio1" class="css-label radGroup1">Eu sou Empresário/ Profissional</label>
+                        </td>
+                    </tr><tr>
+                        <td>
+                            <input type="radio" name="radiog_page1" id="radio2" data-value="PROFISSIONAL LIBERAL" data-formid="4e64f9c81cc5baf92e6d9e1760341ed1" class="css-checkbox"  />
+                            <label for="radio2" class="css-label radGroup1">Eu sou Desportista</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="radiog_page1" id="radio3" data-value="PROFISSIONAL" data-formid="661c0106636e2af8637903935971e7d2" class="css-checkbox" />
+                            <label for="radio3" class="css-label radGroup1">Profissional - Trabalho numa Empresa</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="radiog_page1" id="radio4" data-value="OUTRO" data-formid="e92904b88ffdfaca6a1aa19826ee5ea8" class="css-checkbox" />
+                            <label for="radio4" class="css-label radGroup1">Profissional - Trabalho numa Empresa</label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="de elBTN elAlign_center elMargin0 elButtonBlock de-editable" data-step="1" id="btn-step1" data-de-type="button" data-de-editing="false" data-title="button" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 15px; outline: none; cursor: pointer;">
+                <a   href="#" class="elButton elButtonColor1 elButtonFull elFont_oswald elButtonFlat elButtonSize3 elButtonIcon1" style="color: rgb(255, 255, 255); background-color: rgb(206, 53, 26);"
+                onclick="">
+                <span class="elButtonMain">Ir para o Passo 2!</span>
+                <span class="elButtonSub"></span>
+            </a>
+        </div>
+    </div>
+    <!-- ====================================================================================================  -->
+    <!-- Passo 2 ============================================================================================ -->
+    <div id="optin-p2" style="display: none;">
+        <div class="de elInputWrapper de-input-block elAlign_center elMargin0 de-editable" id="inf_field_FirstName" data-de-type="input" data-de-editing="false" data-title="name field" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 20px; outline: none; cursor: pointer;" type="name">
+            <input id="fieldName" type="text" placeholder="Escreve o teu Nome..." name="inf_field_FirstName" class="elInput elInput100 elAlign_left elInputMid elInputBG1 elInputBR5 elInputIRight required0 elInputIName elInputIBlack elInputStyle2 garlic-auto-save" data-type="extra">
+        </div>
+        <div class="de elInputWrapper de-input-block elAlign_center elMargin0 de-editable" id="inf_field_Email" data-de-type="input" data-de-editing="false" data-title="email field" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 20px; outline: none; cursor: pointer;" type="email">
+            <input id="fieldEmail" type="text" placeholder="Escrever o teu melhor E-mail..." name="inf_field_Email" class="elInput elInput100 elAlign_left elInputMid elInputBG1 elInputBR5 elInputIRight elInputIBlack elInputIEmail elInputStyle2 required1 garlic-auto-save" data-type="extra" required="required">
+        </div>
+        <div class="de elBTN elAlign_center elMargin0 elButtonBlock de-editable" data-step="2" id="btn-step2" data-de-type="button" data-de-editing="false" data-title="button" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 15px; outline: none; cursor: pointer;">
+            <a   href="#" class="elButton elButtonColor1 elButtonFull elFont_oswald elButtonFlat elButtonSize3 elButtonIcon1" style="color: rgb(255, 255, 255); background-color: rgb(206, 53, 26);"
+            onclick="">
+            <span class="elButtonMain">Sim, confirmar a minha inscrição!</span>
+            <span class="elButtonSub"></span>
+        </a>
+    </div>
+</div>
+<!-- ==================================================================================================== -->
+<!-- Passo 3 ============================================================================================ -->
+<div id="optin-p3" style="display: none;">
+    <div id ="radioBlock2" style="padding:10px;border-width:3px; border-style: solid; border-color: rgba(255, 255, 255, 0.92);">
+        <h3  style="color:white;">Qual o teu maior desafio?</h3>
+        <table  id="ryanTable2">
+            <tr>
+                <td>
+                    <input type="radio" name="radiog_page3" id="radio2_1" data-value="Financeiro" class="css-checkbox" />
+                    <label for="radio2_1" class="css-label radGroup1">Financeiro</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="radiog_page3" id="radio2_2" data-value="Emprego ou promoção" class="css-checkbox"  />
+                    <label for="radio2_2" class="css-label radGroup1">Emprego ou promoção</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="radiog_page3" id="radio2_3" data-value="Energia / Forma física" class="css-checkbox" />
+                    <label for="radio2_3" class="css-label radGroup1">Energia / Forma física</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="radiog_page3" id="radio2_4" data-value="Networking" class="css-checkbox" />
+                    <label for="radio2_4" class="css-label radGroup1">Networking</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="radiog_page3" id="radio2_5" data-value="Motivação ou Disciplina" class="css-checkbox" />
+                    <label for="radio2_5" class="css-label radGroup1">Motivação ou Disciplina</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="radiog_page3" id="radio2_6" data-value="-1" class="css-checkbox" />
+                    <label for="radio2_6" class="css-label radGroup1">Outro</label>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="de elInputWrapper de-editable de-input-block elAlign_center elMargin0" id="div_question_other" data-de-type="textarea" data-de-editing="false" data-title="input form" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" type="not-set" style="margin-top: 10px; outline: none; cursor: pointer;display: none;">
+        <textarea id="question_other" type="text" placeholder="Enter Your Info Here..." name="not-set" class="elInput elInput100 elAlign_left elInputMid elInputStyl0 elInputBG1 elInputBR5 elInputI0 elInputIBlack elInputIRight required0 garlic-auto-save" data-type="extra"></textarea>
+    </div>
+    <div class="de elBTN elAlign_center elMargin0 elButtonBlock de-editable" data-step="3" id="btn-step3" data-de-type="button" data-de-editing="false" data-title="button" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 15px; outline: none; cursor: pointer;">
+        <a   href="#" class="elButton elButtonColor1 elButtonFull elFont_oswald elButtonFlat elButtonSize3 elButtonIcon1" style="color: rgb(255, 255, 255); background-color: rgb(206, 53, 26);"
+        onclick="">
+        <span class="elButtonMain">Clique aqui para concluir a inscrição</span>
+        <span class="elButtonSub"></span>
+    </a>
+</div>
+</div>
+</form>
+</div>
+<script>
+//this.form.method='post'; this.form.action='https://yu227.infusionsoft.com/app/form/process/8f9be23581d70cbcae7595c3b532bd82';this.form.submit();
+function loadJQuery(){
+    if ((typeof window.jQuery) == "undefined") {
+        var script_tag = document.createElement('script');
+        script_tag.setAttribute("type","text/javascript");
+        script_tag.setAttribute("src","https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+        script_tag.onload = jQueryLoaded;
+        script_tag.onreadystatechange = function () {
+            if (this.readyState == 'complete' || this.readyState == 'loaded') {
+                jQueryLoaded();
+            }
+        }
+        document.getElementsByTagName("head")[0].appendChild(script_tag);
+    } else {
+        jQueryLoaded();
+    }
+};
+$( document ).ready(function() {
+    $(".elVideoUnlockerElement").parent().attr("id") + window.location.href + Math.floor(1020 * Math.random() + 1);
+});
+// loadJQuery();
+function jQueryLoaded() {
+}
+$('input[name=radiog_page1]').bind('change', function(){
+    $('#radioBlock').css('border-color','rgba(255, 255, 255, 1)');
+    var formGuid= $('input[name=radiog_page1]:checked');
+    var frmV = formGuid.data('value');
+    var frmT = formGuid.data('formid');
+    var frmA = getParameterByName('afl');
+    var frmR = getParameterByName('ref');
+    var frmFld1 = getParameterByName('fld1');
+    var frmFld2 = getParameterByName('fld2');
+    $('#inf_custom_TipoLead').val(frmV);
+    $('#inf_custom_Affiliate').val(frmA);
+    $('#inf_custom_ref').val(frmR);
+    $('#inf_custom_fld1').val(frmFld1);
+    $('#inf_custom_fld2').val(frmFld2);
+    $('#inf_form_xid').val(frmT);
+});
+$('#btn-step1').bind('click', function () {
+    var formGuid= $('input[name=radiog_page1]:checked');
+    var frmV = formGuid.data('value');
+    var frmT = formGuid.data('formid');
+    $('#inf_custom_TipoLead').val(frmV);
+    $('#inf_form_xid').val(frmT);
+    /* ************************************************** */
+    if(frmV === null || frmV === undefined){frmV='';}
+    if(frmV.length > 0) {
+        $('#inf_custom_TipoLead').val(frmV);
+        $('#optin-p1').hide();
+        $('#optin-p2').css('display', 'block');
+        // $('#btn-confirm').data('step','2');
+    } else {
+        $('#radioBlock').css('border-color','rgb(185, 21, 23)');
+        $('#radioBlock').css('border-width','3px');
+        $('#radioBlock').css('border-style','solid');
+    }
+    /* ************************************************** */
+});
+$('#btn-step2').bind('click', function () {
+    var name = $('#fieldName').val();
+    var email = $('#fieldEmail').val();
+    var formGuid= $('input[name=radiog_page1]:checked');
+    var frmV = formGuid.data('value');
+    var frmT = formGuid.data('formid');
+    $('#inf_custom_TipoLead').val(frmV);
+    $('#inf_form_xid').val(frmT);
+    if(isValidEmailAddress(email)) {
+        if(name == '') {
+            $('#fieldName').val(email);
+        };
+        // submitToInfusionSoft(2); //?????????????????????????????????????????????
+        $('#optin-p2').hide();
+        $('#optin-p3').css('display', 'block');
+    } else {
+        $('#fieldEmail').css('border-color','rgb(185, 21, 23)');
+        $('#fieldEmail').css('border-width','3px');
+    };
+});
+$('input[name=radiog_page3]').bind('change', function(){
+    $('#radioBlock').css('border-color','rgba(185, 21, 23, 0)');
+    var formGuid= $('input[name=radiog_page3]:checked');
+    var frmV = formGuid.data('value');
+    if(frmV == '-1'){
+        $('#div_question_other').show();
+    } else {
+        $('#div_question_other').hide();
+    };
+});
+$('#btn-step3').bind('click', function () {
+    var formGuid= $('input[name=radiog_page3]:checked');
+    var frmV = formGuid.data('value');
+    if(frmV === null || frmV === undefined){frmV='';}
+    $('#inf_custom_TopQuestao').val(frmV);
+    if(frmV == '-1'){
+        $('#radioBlock2').css('border-color','rgba(255, 255, 255, 1)');
+        $('#radioBlock2').css('border-width','3px');
+        $('#radioBlock2').css('border-style','solid');
+        if($('#question_other').val().length > 0){
+            $('#question_other').css('border-color','rgba(255, 255, 255, 1)');
+            $('#question_other').css('border-width','3px');
+            $('#question_other').css('border-style','solid');
+            $('#inf_custom_TopQuestao').val($('#question_other').val());
+            submitToInfusionSoft(3);
+        } else {
+            $('#question_other').css('border-color','rgba(185, 21, 23, 1)');
+            $('#question_other').css('border-width','3px');
+            $('#question_other').css('border-style','solid');
+        }
+    }else {
+        $('#question_other').css('border-color','rgba(255, 255, 255, 1)');
+        $('#question_other').css('border-width','3px');
+        $('#question_other').css('border-style','solid');
+        if(frmV.length > 0) {
+            submitToInfusionSoft(3);
+        } else {
+            $('#radioBlock2').css('border-color','rgba(185, 21, 23, 1)');
+            $('#radioBlock2').css('border-width','3px');
+            $('#radioBlock2').css('border-style','solid');
+        }
+    }
+});
+function isValidEmailAddress(emailAddress) {
+    var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+    return pattern.test(emailAddress);
+};
+function  submitToInfusionSoft(p) {
+    var email = $('#fieldEmail').val();
+    var formGuid= $('input[name=radiog_page1]:checked');
+    var frmV = formGuid.data('value');
+    var frmT = formGuid.data('formid');
+    $('#inf_custom_TipoLead').val(frmV);
+    $('#inf_form_xid').val(frmT);
+    $('#isFrm').attr('action', 'https://yu227.infusionsoft.com/app/form/process/' +frmT);
+    //var datastring  =  $("#isFrm").serializeFormJSON();
+    var frmid = $('#inf_form_xid').val();
+    $('#isFrm').submit();
+    //this.form.method='post'; this.form.action='https://yu227.infusionsoft.com/app/form/process/8f9be23581d70cbcae7595c3b532bd82';this.form.submit();
+    $.ajax({
+        type: "POST",
+        crossDomain: true,
+        url: "https://yu227.infusionsoft.com/app/form/process/" + frmid,
+        data:  datastring,
+        datatype: 'json',
+        send: function (){},
+        beforeSend: function(xhr) {
+            //  xhr.setRequestHeader('Access-Control-Allow-Headers', '*');
+            // xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+            // xhr.setRequestHeader('Access-Control-Allow-Methods', 'POST');
+            //  xhr.setRequestHeader('Access-Control-Allow-Credentials', 'true');
+            //  xhr.setRequestHeader('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');
+        },
+        success: function(data) {
+            if(p==3) window.location='https://mindsetsamurai.com/thank-you-v2/?email='+email;
+        },
+        error: function(error) {
+            if(p==3) window.location='https://mindsetsamurai.com/thank-you-v2/?email='+email;
+        }
+    });
+};
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+    results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+(function ($) {
+    $.fn.serializeFormJSON = function () {
+        var o = {};
+        var a = this.serializeArray();
+        $.each(a, function () {
+            if (o[this.name]) {
+                if (!o[this.name].push) {
+                    o[this.name] = [o[this.name]];
+                }
+                o[this.name].push(this.value || '');
+            } else {
+                o[this.name] = this.value || '';
+            }
+        });
+        return o;
+    };
+})(jQuery);
+</script>
