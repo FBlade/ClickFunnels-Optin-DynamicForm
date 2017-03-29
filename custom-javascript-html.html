@@ -101,6 +101,7 @@ label.css-label {
 <div id="optin-p3" style="display: none;">
     <div id ="radioBlock2" style="padding:10px;border-width:3px; border-style: solid; border-color: rgba(255, 255, 255, 0.92);">
         <h3  style="color:white;">Qual é o teu maior obstáculo no momento presente?</h3>
+        <h4 id="radioBlock2Alert" style="color:rgb(214, 27, 27);display:none;">Seleciona uma opção!</h3>
         <table  id="ryanTable2">
             <tr>
                 <td>
@@ -258,6 +259,7 @@ $('#btn-step3').bind('click', function () {
         $('#radioBlock2').css('border-color','rgba(255, 255, 255, 1)');
         $('#radioBlock2').css('border-width','3px');
         $('#radioBlock2').css('border-style','solid');
+        $('#radioBlock2Alert').css('display', 'none');
         if($('#question_other').val().length > 0){
             $('#question_other').css('border-color','rgba(255, 255, 255, 1)');
             $('#question_other').css('border-width','3px');
@@ -279,6 +281,7 @@ $('#btn-step3').bind('click', function () {
             $('#radioBlock2').css('border-color','rgba(185, 21, 23, 1)');
             $('#radioBlock2').css('border-width','3px');
             $('#radioBlock2').css('border-style','solid');
+            $('#radioBlock2Alert').css('display', 'block');
         }
     }
 });
