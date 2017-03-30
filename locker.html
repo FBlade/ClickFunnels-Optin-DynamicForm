@@ -1,0 +1,37 @@
+<!-- http://www.prismascacchi.com/locker/# -->
+<script>
+jQuery(document).ready(function ($) {
+   $('.content-locked').sociallocker({
+	text:{
+	   header: 'Compartilhe e Ganhe o Glossário do Marketing Digital',
+	   message: ''
+	},
+	theme: 'secrets',
+	facebook:{
+	   share:{
+	      url: 'https://mindsetsamurai.com/',
+	      title: 'Partilhar'
+	   },
+	   appId: '1130003653775592',
+	   lang: 'pt_PT'
+	},
+	buttons:{
+	   order: ["facebook-share"],
+	   counters: true,
+	   lazy: true
+	},
+	lang: 'pt_PT',
+	twitter:{
+	   lang: 'pt'
+	},
+	google:{
+	   lang: 'pt'
+	}
+   });
+});
+</script>
+
+<script src="js/libs/jquery.min.js"></script>
+<script src="js/libs/jquery.ui.highlight.min.js"></script>
+<script src="js/pandalocker.2.1.0.min.js"></script>
+<link type="text/css" rel="stylesheet" href="css/pandalocker.2.1.0.min.css">
